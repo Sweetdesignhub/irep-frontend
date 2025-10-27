@@ -1,0 +1,37 @@
+
+.sidebar{
+    margin-left:45px;
+    position: absolute;
+    z-index: 1;
+    background-color: var(--background-color-3);
+    /* border:2px solid red; */
+    background-color: aliceblue;
+}
+.sidebar-item {
+    display: block;
+    padding: 8px 12px;
+    cursor: grab;
+    color: var(--font-color);
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid var(--background-color-3);
+  }
+  
+  .sidebar-item:hover {
+    background-color: var(--background-color-2);
+    border-radius: 4px;
+  }
+
+  /* .ant-collapse{
+    width: 20%;
+  } */
+  .ant-collapse-content-box{
+    padding: 0px !important;
+  }
+
+/* .span-disable{
+  background-color: var(--background-color-1);
+}
+.span-disable:hover {
+  background-color: var(--background-color-1);
+  cursor:default;
+} */

@@ -1,0 +1,53 @@
+
+/* Import Google Fonts before Tailwind */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure consistency in font usage */
+body,
+.ant-typography,
+.ant-btn {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+/* Fix click issues inside React Flow nodes */
+.nodrag {
+  pointer-events: all !important;
+}
+
+/* Ensure dropdowns inside React Flow nodes are clickable */
+.custom-dropdown {
+  pointer-events: auto !important;
+}
+
+/* Ant Design Select Placeholder Fix */
+/* .ant-select .ant-select-selection-placeholder {
+  color: red !important;
+  opacity: 0.8 !important;
+} */
+
+/* Loader Animation */
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite !important;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

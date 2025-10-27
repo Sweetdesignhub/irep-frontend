@@ -1,0 +1,85 @@
+/* General container styling */
+.file-upload-container {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FDFAFD;
+    text-align: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+    width: 20vw;
+}
+
+.file-upload-container.dragging {
+    box-shadow: 0 4px 15px rgba(0, 170, 255, 0.5);
+}
+
+/* Title styling */
+.file-upload-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #343434;
+    margin-bottom: 20px;
+}
+
+/* Drag & Drop Area Styling */
+.drag-drop-area {
+    border: 2px dashed #ccc;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: #e6e6e6;
+    transition: border-color 0.3s ease-in-out;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drag-drop-area:hover {
+    border-color: #00aaff;
+}
+
+.drag-drop-area .dragging {
+    border-color: #00aaff;
+}
+
+/* File upload label */
+.file-upload-label {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #00aaff;
+}
+
+/* Submit button container */
+.submit-btn-container {
+    margin-top: 15px;
+}
+
+/* Submit button styling */
+.submit-btn {
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0077cc;
+}
+
+.submit-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Optional: Styling for file info display */
+.drag-drop-area div {
+    font-size: 14px;
+    color: #666;
+}

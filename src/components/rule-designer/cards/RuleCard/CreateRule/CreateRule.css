@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&family=Teko:wght@300..700&display=swap");
+/* 
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* body {
+  background: #000;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.input-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; /* Regular */
+}
+
+.titles {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700; /* Regular */
+}
+
+.card {
+  --card-bg-color: #fff;
+  --border-radius: 15px;
+  background: var(--card-bg-color);
+  width: 400px;
+  min-height: 50vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}
+
+.card_inner {
+  --border-size: 5px;
+  width: calc(100% - var(--border-size));
+  height: calc(100% - var(--border-size));
+  background: var(--card-bg-color);
+  position: absolute;
+  border-radius: var(--border-radius);
+}
+
+.card_inner::before {
+  --width: 50%;
+  --height: 135%;
+  width: var(--width);
+  height: var(--height);
+  top: calc(50% - var(--height) / 2);
+  left: calc(50% - var(--width) / 2);
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    130deg,
+    rgb(55, 198, 241) 25%,
+    rgb(99, 196, 235) 96%
+  );
+  z-index: -1;
+  filter: blur(20px);
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.custom-rule-node-container {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: rgba(255, 255, 255, 1); /*  Semi-transparent white */
+  /* backdrop-filter: blur(50px); Adds blur effect to the background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 20vw;
+  height: auto;
+  top: 176.32px;
+  left: 615px;
+  gap: 0px;
+  border-radius: 11.03px;
+  border: 1.38px solid rgba(102, 112, 133, 0.08); /* Slight border with transparency */
+  opacity: 1; /* Ensure it's fully visible */
+  padding: 1.5rem 2rem;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); /* Subtle but noticeable shadow */
+}
+
+.custom-rule-node-question {
+  /* width: 15vw;
+  height: 5vh; */
+  background: #fde6c3;
+  border: 0.67px solid #e6eff5;
+  border-radius: 2px;
+  /* padding: 0.3rem 0.5rem; */
+  /* margin-bottom: 1rem; */
+  font: Roboto;
+  color: #7a2b07;
+}
+
+.custom-rule-node-choice {
+  appearance: none; /* Removes native styles for customization */
+  -webkit-appearance: none; /* For WebKit-based browsers */
+  -moz-appearance: none; /* For Firefox */
+  width: 15vw;
+  background: #ffffff;
+  border: 0.67px solid #e6eff5;
+  border-radius: 2px;
+  padding: 0.3rem 0.5rem;
+  margin-bottom: 1rem;
+  color: #312c2a;
+}
+
+.custom-rule-node-choice option:first-child {
+  color: #312c2a; /* Placeholder color */
+}
+
+.custom-rule-node-drop-down {
+  width: 15vw;
+  background: #ffffff;
+  border: 0.67px solid #e6eff5;
+  border-radius: 2px;
+  padding: 0.3rem 0.5rem;
+  /* margin-bottom: 1rem; */
+  color: #312c2a;
+}
+
+.custom-rule-node {
+  width: 15vw;
+  background: #ffffff;
+  border: 0.67px solid #e6eff5;
+  border-radius: 2px;
+  padding: 0.3rem 0.5rem;
+  margin-bottom: 1rem;
+  color: #312c2a;
+}
+
+.custom-rule-node-create {
+  width: 15vw; /* Full-width button */
+  background: #ffffff;
+  border: 0.67px solid #e6eff5;
+  border-radius: 2px;
+  padding: 0.3rem 0.5rem;
+  font-family: Roboto, sans-serif; /* Ensure Roboto font */
+  color: #312c2a;
+  text-align: center; /* Center text */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.custom-rule-node-create:hover {
+  background: #f0f4f8; /* Lighten background on hover */
+  border-color: #d1e3f0; /* Slightly darker border on hover */
+}
+
+.custom-rule-node-create:active {
+  background: #e6eff5; /* Slightly darker background when clicked */
+  border-color: #c3d8e5;
+}
+
+.custom-rule-node-plus {
+  margin-left: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.custom-rule-node-cross {
+  margin-left: 1rem;
+  padding: 0.2rem 0.6rem;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  align-self: left;
+}
+
+.custom-rule-node-select {
+  width: 13vw;
+  background: #ffffff;
+  border: 0.67px solid #e6eff5;
+  border-radius: 2px;
+  padding: 0.3rem 0.5rem;
+  margin-bottom: 1rem;
+  color: #312c2a;
+}

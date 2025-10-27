@@ -1,0 +1,48 @@
+.input-node-container{
+    background-color: #FDFAFD;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    width: 25vw;
+
+}
+
+.input-node-drop-down-btn {
+    width: 20vw;
+    background: transparent;
+    border: 1px solid #FDFAFD; /* Add a border for better visibility */
+    text-align: left;
+    display: flex; /* Ensures alignment works for text and icon */
+    align-items: center;
+    /* justify-content: center; */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 8px 12px; /* Adds spacing */
+    border-radius: 4px; /* Rounds the edges slightly */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.input-node-img{
+    width: '16px';
+    height: '16px';
+}
+
+.input-node-drop-down-btn:hover {
+    background-color: #f0f0f0; /* Light background on hover */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+
+.input-node-title{
+    color: #343434; 
+    margin-left: 0;
+    margin-bottom: 1vh;
+    padding-bottom: 3px;
+}
+
+.input-node-val{
+    color: black;
+    width: 20vw;
+    margin-left: 1vw;
+    height: 3vh;
+}

@@ -1,0 +1,42 @@
+.change-node-container{
+    background-color: #FDFAFD;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    width: 25vw;
+}
+
+.change-node-drop-down-btn {
+    width: 20vw;
+    background: transparent;
+    border: 1px solid #FDFAFD; 
+    text-align: left;
+    display: flex; 
+    align-items: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 8px 12px;
+    border-radius: 4px; 
+    transition: all 0.3s ease;
+}
+
+.change-node-drop-down-btn:hover {
+    background-color: #f0f0f0; 
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+}
+
+
+.change-node-title{
+    color: #343434; 
+}
+
+.change-node-val{
+    color: black;
+    width: 100vw;
+    height: 3vh;
+}
+
+.change-node-drop-down-img{
+    width: '8px';
+    height: '16px';
+}

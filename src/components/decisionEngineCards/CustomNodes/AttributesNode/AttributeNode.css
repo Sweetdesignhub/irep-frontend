@@ -1,0 +1,42 @@
+.attribute-node-container{
+    background-color: #FDFAFD;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    width: 20vw;
+}
+
+.attribute-node-drop-down-btn {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #FDFAFD; /* Add a border for better visibility */
+    text-align: left;
+    display: flex; /* Ensures alignment works for text and icon */
+    align-items: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 8px 12px; /* Adds spacing */
+    border-radius: 4px; /* Rounds the edges slightly */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.attribute-node-drop-down-btn:hover {
+    background-color: #f0f0f0; /* Light background on hover */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+
+.attribute-node-title{
+    color: #343434; 
+}
+
+.attribute-node-val{
+    color: black;
+    width: 40vw;
+    height: 3vh;
+}
+
+.attribute-node-drop-down-img{
+    width: '8px';
+    height: '16px';
+}

@@ -1,0 +1,104 @@
+
+.card {
+  border: 1px solid #9e9e9e;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: white;
+  color: black;
+}
+
+.form-style {
+  width: 300px;
+}
+
+.collapse-style {
+  max-width: 350px;
+}
+
+.collapse-style-scroll {
+  margin-top: 20px;
+  /* border: 2px solid red; */
+  max-width: 350px;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.card-title {
+  font-weight: bold;
+  color: black;
+}
+
+.card-flag-color {
+  width: 17px;
+  height: 17px;
+  border-radius: 10%;
+}
+
+.label {
+  text-align: left; /* Aligns the text to the left */
+  display: block; /* Ensures the label takes the full width */
+  margin-bottom: 5px; /* Adds space below the label */
+  font-weight: bold; /* Optional: Makes the label bold */
+}
+
+.input-field {
+  width: 100%; /* Makes the input take the full width */
+  margin-bottom: 10px; /* Adds space below the input field */
+}
+
+.tick-line {
+  /* position: absolute;  */
+  /* top: 20px; */
+  left: 0;
+  width: 100%;
+  height: 1px; /* Height of the tick line */
+  background-color: black;
+  margin: 5px 0 5px 0;
+}
+
+.selector {
+  width: 100%;
+}
+
+.save-btn {
+  margin: 10px;
+  border: 0px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: rgb(0, 0, 0);
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.condition-group{
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+
+.condition .selector .input{
+  padding-left: 8px;
+}
+
+.remove-condition-btn{
+  /* border: 2px solid red; */
+  /* left:90% */
+}
+
+.add-condition-btn{
+  margin-top: 5px;
+  /* margin-left: 5px;
+  margin-right: 5px; */
+  /* border: 2px solid red; */
+  left:90%
+}

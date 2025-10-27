@@ -1,0 +1,7 @@
+@xyflow/react
+yup 
+formik
+@types/node for shadcn
+papaparse for parse the file
+axios
+@ant-design/icons

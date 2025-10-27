@@ -16,7 +16,7 @@ jobs:
     name: Build and Deploy Job
     env:
       NODE_ENV: main
-      VITE_API_URL: https://irep-dhgrdrf6fxetd3ef.centralus-01.azurewebsites.net/api/v1
+      VITE_API_URL: https://sdhbackend.sweetdesignhub.com/ruleengine/api/v1
     permissions:
        id-token: write
        contents: read
